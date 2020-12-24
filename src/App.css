@@ -1,38 +1,532 @@
+/* general styles */
 .App {
-  text-align: center;
+  /* border: 1px solid red; */
+  margin: 35px 35px 0 35px;
+  display: flex;
+  /* height: 1000vh; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CardTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #4f4f4f;
+  margin-left: 19px;
+  padding-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* portfolio aside styles */
+
+/* profile styles */
+.PortfolioAside {
+  /* border: 1px solid blue; */
+  width: 25%;
+  margin-right: 1%;
+  height: 100%;
+}
+
+.ProfileContainer {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  /* border: 1px solid orange; */
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 5px #e9e9e9;
+}
+
+.ProfileImage {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  margin: 17px 15px 0 19px;
+}
+
+.ProfileName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #4f4f4f;
+  margin: 13px 0 0 19px;
+  text-transform: capitalize;
+}
+
+.JobTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #828282;
+  margin: 5px 0 0 19px;
+}
+
+.ContactsContainer {
+  /* border: 1px solid yellowgreen; */
+  margin: 23px 0;
+}
+
+.Contacts {
+  /* border: 1px solid peru; */
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin-left: 19px;
+}
+
+.ContactPerson {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #4f4f4f;
+  margin: 0 0 10px 0;
+}
+
+.ContactIcon {
+  font-size: 18px;
+  color: #4f4f4f;
+  margin: 0 15px 10px 0;
+}
+
+.ProfileAbout {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #828282;
+  margin: 0 0 0 19px;
+  width: 260px;
+  padding-bottom: 40px;
+}
+
+/* experience styles */
+.ExperienceContainer {
+  display: flex;
+  /* border: 1px solid purple; */
+  margin-bottom: 30px;
+}
+
+.CompanyLogo {
+  width: 64px;
+  height: 64px;
+  /* border: 1px solid red; */
+  margin-top: 0px;
+}
+
+.ExperienceDuration {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828282;
+  margin-bottom: 5px;
+}
+
+.ExperienceJobTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  margin: 0 0 30px 0;
+}
+
+.ExperienceJobDesc {
+  width: 203px;
+  height: 79px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828282;
+}
+
+/* hobbies styles */
+.HobbyImage {
+  width: 280px;
+  height: 130px;
+  border-radius: 12px;
+  margin-left: 19px;
+  margin-right: 17px;
+}
+
+.HobbyType {
+  margin-left: 19px;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.HobbyDesc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828282;
+  margin: 0 0 0 19px;
+  padding-bottom: 35px;
+}
+
+/* portfolio main styles */
+.PortfolioMain {
+  /* border: 1px solid green; */
+  width: 73%;
+  margin-left: 1%;
+  height: 100%;
+}
+
+.SkillLevelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SkillLevel {
+  width: 48.5%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
+  box-shadow: 0px 5px 5px #e9e9e9;
+}
+
+.SkillTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  margin: 20px 0 15px 19px;
+}
+
+.Skill {
+  margin-left: 19px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid purple; */
+}
+
+.SkillName {
+  /* border: 1px solid blue; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 140.14px;
+  height: 21.34px;
+  color: #4f4f4f;
+  margin: 5px;
+}
+
+.ProgressBar {
+  background-color: #c4c4c4;
+  border-radius: 12px;
+  width: 50%;
+  /* (height of inner div) / 2 + padding */
+  /* padding: 3px; */
+  margin-left: 50px;
+}
+
+.ProgressBar > div {
+  background: rgba(47, 128, 237, 0.7);
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 10px;
+  border-radius: 12px;
+}
+
+.ProjectHeading {
+  margin: 40px 0 15px 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  /* display: flex;
+  align-items: center; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* border: 1px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
+.ProjectToggle {
+  /* border: 1px solid blue; */
+  margin: 0 0 19px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ProjectToggleBtn {
+  padding: 5px 10px;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #4f4f4f;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.ToggleBtn {
+  background: #6aa2ef;
+  border: 1px solid #6aa2ef;
+  color: #fff;
+}
+
+.ProjectHeading h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4f4f4f;
+  margin-left: 19px;
+}
+
+.ProjectContainer {
+  width: 100%;
+  /* height: 320px; */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 5px #e9e9e9;
+  display: flex;
+  padding: 15px 10px;
+  margin-bottom: 35px;
+}
+
+.ProjectImage {
+  width: 322px;
+  height: 274px;
+  border-radius: 12px;
+  margin-right: 25px;
+}
+
+.ProjectType {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-top: 5px;
+}
+
+.ProjectTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+  margin-top: 25px;
+}
+
+.ProjectDetails {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #828282;
+  width: 90%;
+  height: 80px;
+  margin: -5px 0 50px 0;
+}
+
+.ProjectBtn {
+  width: 106.27px;
+  height: 38px;
+  background: #5c94e1;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.ProjectBtn a {
+  color: #fff;
+}
+
+.Code a {
+  color: #5c94e1;
+}
+
+.Demo {
+  margin-right: 4px;
+}
+
+.Code {
+  margin-left: 4px;
+  border: 1px solid #5c94e1;
+  background: none;
+}
+
+.BlogsContainer {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 5px #e9e9e9;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0 10px 10px;
+  margin-bottom: 35px;
+}
+
+.BlogImage {
+  width: 502px;
+  height: 324px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 25px;
+}
+
+.BlogHeading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-top: -8px;
+}
+
+.BlogTitle {
+  width: 178px;
+  height: 87px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.BlogText {
+  width: 318px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.BlogLinkBtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  /* font-family: 'Montserrat'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5c94e1;
+  cursor: pointer;
+}
+
+/* footer styles */
+.Footer {
+  border-top: 1px solid #bdbdbd;
+  width: 402px;
+  margin: 50px auto 0 auto;
+}
+
+.FooterText {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    /* border: 1px solid red; */
+    margin: 20px 20px 0 20px;
+    display: flex;
+    /* height: 1000vh; */
   }
-  to {
-    transform: rotate(360deg);
+
+  .PortfolioAside {
+    /* outline: 1px solid blue; */
+    width: 30%;
+  }
+
+  .ProfileImage {
+    width: 85%;
+    height: 50%;
+    margin: 15px 20px 0 15px;
+  }
+
+  .ProfileName {
+    font-size: 18px;
+  }
+
+  .JobTitle {
+    font-size: 14px;
+  }
+
+  .ContactIcon {
+    font-size: 16px;
+    margin: 0 8px 10px 0;
+  }
+
+  .ProfileAbout {
+    width: 80%;
+  }
+
+  .CompanyLogo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ExperienceJobDesc {
+    width: 80%;
+    height: 120px;
+    /* margin-bottom: 0; */
+  }
+
+  .HobbyImage {
+    width: 85%;
+  }
+
+  .HobbyDesc {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+
+  .PortfolioMain {
+    /* border: 1px solid green; */
+    width: 68%;
+    /* display: none; */
+  }
+
+  .ProgressBar {
+    margin: 0 12px 0 10px;
+  }
+
+  .ProjectImage {
+    width: 50%;
+    height: 274px;
+  }
+
+  .ProjectDetails {
+    width: 90%;
+    height: 40%;
+  }
+
+  .ProjectBtn {
+    width: 96.27px;
+    margin-top: 10px;
+  }
+
+  .BlogDetails {
+    /* outline: 1px solid blue; */
+    width: 45%;
+  }
+
+  .BlogImage {
+    width: 55%;
+    margin-left: 5px;
+  }
+
+  .BlogText {
+    width: 80%;
   }
 }
